@@ -5,6 +5,8 @@
 This plugin is intended for customers of DX (https://getdx.com/). It shares Jenkins build data with DX.
 
 To run this plugin locally:
+- Install Jenkins: https://www.jenkins.io/doc/pipeline/tour/getting-started/
+- Setup your developer environment: https://www.jenkins.io/doc/developer/tutorial/prepare/
 - `mvn hpi:run -Dport=5000`
 - Navigate to http://localhost:5000/jenkins
 
