@@ -15,8 +15,21 @@ To generate a *.hpi file:
 
 ## Getting started
 ### Installing the Plugin
-- Download or generate the plugin (*.hpi file) and put it in the following directory: <jenkinsHome>/plugins/
-- restart Jenkins
+- Click "Manage Jenkins"
+<img width="355" alt="Screenshot 2024-04-09 at 4 25 20 PM" src="https://github.com/get-dx/datacloud-jenkins/assets/44679211/be44257c-e484-44f5-8a13-85fe20e0df0b">
+
+- Click "Plugins"
+<img width="962" alt="Screenshot 2024-04-09 at 4 25 29 PM" src="https://github.com/get-dx/datacloud-jenkins/assets/44679211/848e7e31-aca5-47a7-b512-297470259148">
+
+- Click "Advanced Settings"
+<img width="351" alt="Screenshot 2024-04-09 at 4 25 39 PM" src="https://github.com/get-dx/datacloud-jenkins/assets/44679211/8dbbd35a-4ae9-4bda-b492-993ddac9b880">
+
+- Click "Choose File" under "Deploy Plugin", and select the *.hpi file
+<img width="870" alt="Screenshot 2024-04-09 at 4 25 51 PM" src="https://github.com/get-dx/datacloud-jenkins/assets/44679211/5b4cdf72-82ef-4aad-9576-0b9d57bb736b">
+
+- Once the upload is complete, restart Jenkins
+- To confirm the plugin is present, confirm `dx-data-sharer.jpi` is present in {jenkins_home}/plugins/
+- To confirm the plugin is running, check the console ouput for a build. You should see the message: "Authentication token not found for key: dx_token". Proceed to the next step: Adding your DX API Key to Jenkins.
 
 ### Adding Your DX API Key to Jenkins
 - Click “Manage Jenkins” in the menu on the left side of the homepage.
@@ -31,23 +44,18 @@ To generate a *.hpi file:
 - Click “Add Credentials”.
 <img width="343" alt="Screenshot 2024-04-01 at 12 25 13 PM" src="https://github.com/mattilavan/jenkins-plugins/assets/44679211/3b2be1f0-e341-4de3-bf65-0947408cce73">
 
-- Choose “Secret Text” as “Kind”
+- For "Kind", select “Secret Text”
 - Choose your desired scope
-- Add your Key as the “Secret”
-- Use the name “dx_token” as “ID”
-- Use “An API Key for the DX API” as “Description”
+- For “Secret”, ass your API Key
+- For “ID”, use the string "dx_token"
+- For "Description", use “An API Key for the DX API”
 - Click “OK”
 
 ### Adding Your DX URL to Jenkins
 - Follow the same steps you used to add your API Key, but use the following values:
--- ID: dx_path
+-- ID: "dx_path"
 -- Secret: your company’s DX URL
 -- Description: Company-specific DX URL
-
-
-
-TODO Tell users how to configure your plugin here, include screenshots, pipeline examples and
-configuration-as-code examples.
 
 ## Issues
 
