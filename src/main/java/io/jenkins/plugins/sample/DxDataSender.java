@@ -1,12 +1,17 @@
 package io.jenkins.plugins.sample;
 
+import java.io.BufferedReader;
 import java.io.OutputStream;
+import java.io.InputStreamReader;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import org.json.JSONObject;
+import hudson.model.TaskListener;
 
 public class DxDataSender {
-    public static void sendData(String apiUrl, String dataJson, String authToken) {
+    public static void sendData(String apiUrl, String dataJson, String authToken, TaskListener listener) {
         HttpURLConnection connection = null;
         try {
             URL url = new URL(apiUrl);
@@ -31,6 +36,22 @@ public class DxDataSender {
             // Check the response
             int responseCode = connection.getResponseCode();
             System.out.println("Response Code: " + responseCode);
+            listener.getLogger().println("Response Code: " + responseCode);
+
+            InputStream responseStream = responseCode >= 400 ? connection.getErrorStream() : connection.getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(responseStream));
+            StringBuilder response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+                response.append(System.lineSeparator());
+            }
+
+            if (responseCode >= 400) {
+                JSONObject jsonResponse = new JSONObject(response.toString());
+                System.out.println("Error Message: " + jsonResponse.getString("error"));
+                listener.getLogger().println("Error Message: " + jsonResponse.getString("error"));
+            }
 
         } catch (Exception e) {
             e.printStackTrace();

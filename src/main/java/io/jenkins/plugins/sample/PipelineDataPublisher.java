@@ -43,12 +43,12 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
 
         // Fetch Api Key
         CredentialUtil credentialManager = new CredentialUtil();
-        String authToken = credentialManager.getSecretToken("dx_token");
+        String authToken = credentialManager.getSecretToken("dx_token", listener);
         if (authToken == null) {
             listener.getLogger().println("Authentication token not found for key: dx_token");
             return;
         }
-        String path = credentialManager.getSecretToken("dx_path");
+        String path = credentialManager.getSecretToken("dx_path", listener);
         if (path == null) {
             listener.getLogger().println("Authentication token not found for key: dx_path");
             return;
@@ -72,6 +72,7 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
                         + startTime + "\"," + "\"finished_at\": \""
                         + finishTime + "\"," + "\"status\": \""
                         + status + "\"" + "}",
-                authToken);
+                authToken,
+                listener);
     }
 }
