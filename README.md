@@ -15,6 +15,8 @@ To generate a *.hpi file:
 
 ## Getting started
 ### Installing the Plugin
+- Run your Jenkins instance. This involves finding `jenkins.war` (the location can vary, but if you installed with Homebrew, it is likely `/usr/local/Cellar/jenkins/2.451/libexec`), and running `Java -jar jenkins.war`
+
 - Click "Manage Jenkins"
 <img width="355" alt="Screenshot 2024-04-09 at 4 25 20 PM" src="https://github.com/get-dx/datacloud-jenkins/assets/44679211/be44257c-e484-44f5-8a13-85fe20e0df0b">
 
