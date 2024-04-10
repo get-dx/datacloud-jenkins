@@ -29,7 +29,6 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
 
         // prepare data
         String jobName = run.getParent().getFullName();
-        String id = run.getId();
         String referenceId = generateUUID();
         Integer startTime = (int) (run.getStartTimeInMillis() / 1000);
         Integer duration = (int) (run.getDuration() / 1000);
@@ -61,16 +60,15 @@ public class PipelineDataPublisher extends RunListener<Run<?, ?>> {
         listener.getLogger().println("pipeline_source: Jenkins");
         listener.getLogger().println("reference_id: " + referenceId);
         listener.getLogger().println("started_at: " + startTime);
-        listener.getLogger().println("finished_at: " + finishTime + "ms");
+        listener.getLogger().println("finished_at: " + finishTime);
         listener.getLogger().println("status: " + status);
 
         DxDataSender.sendData(
-                path + "/api/pipelineRuns.notify",
+                path + "/api/pipelineRuns.sync",
                 "{" + "\"pipeline_name\": \""
                         + jobName + "\"," + "\"pipeline_source\": \"Jenkins\","
                         + "\"reference_id\": \""
-                        + referenceId + "\"," + "\"id\": \""
-                        + id + "\"," + "\"started_at\": \""
+                        + referenceId + "\"," + "\"started_at\": \""
                         + startTime + "\"," + "\"finished_at\": \""
                         + finishTime + "\"," + "\"status\": \""
                         + status + "\"" + "}",
