@@ -38,7 +38,7 @@ public class DxDataSender {
             System.out.println("Response Code: " + responseCode);
             listener.getLogger().println("Response Code: " + responseCode);
 
-            InputStream responseStream = responseCode >= 400 ? connection.getErrorStream() : connection.getInputStream();
+            InputStream responseStream = responseCode >= 300 ? connection.getErrorStream() : connection.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(responseStream));
             StringBuilder response = new StringBuilder();
             String line;
@@ -47,7 +47,7 @@ public class DxDataSender {
                 response.append(System.lineSeparator());
             }
 
-            if (responseCode >= 400) {
+            if (responseCode >= 300) {
                 JSONObject jsonResponse = new JSONObject(response.toString());
                 System.out.println("Error Message: " + jsonResponse.getString("error"));
                 listener.getLogger().println("Error Message: " + jsonResponse.getString("error"));
