@@ -8,11 +8,11 @@ public class InjectedTest extends junit.framework.TestCase {
   public static junit.framework.Test suite() throws Exception {
     System.out.println("Running tests for "+"io.jenkins.plugins:dx-data-sharer:1.0-SNAPSHOT");
     Map<String, Object> parameters = new HashMap<String, Object>();
-    parameters.put("basedir","/Users/matt/jenkins/jenkins-plugins");
+    parameters.put("basedir","/Users/matt/jenkins/datacloud-jenkins");
     parameters.put("artifactId","dx-data-sharer");
     parameters.put("packaging","hpi");
-    parameters.put("outputDirectory","/Users/matt/jenkins/jenkins-plugins/target/classes");
-    parameters.put("testOutputDirectory","/Users/matt/jenkins/jenkins-plugins/target/test-classes");
+    parameters.put("outputDirectory","/Users/matt/jenkins/datacloud-jenkins/target/classes");
+    parameters.put("testOutputDirectory","/Users/matt/jenkins/datacloud-jenkins/target/test-classes");
     parameters.put("requirePI","true");
     return org.jvnet.hudson.test.PluginAutomaticTestBuilder.build(parameters);
   }

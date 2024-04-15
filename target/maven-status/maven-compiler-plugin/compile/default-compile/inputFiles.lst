@@ -1,3 +1,3 @@
-/Users/matt/jenkins/jenkins-plugins/src/main/java/io/jenkins/plugins/sample/CredentialUtil.java
-/Users/matt/jenkins/jenkins-plugins/src/main/java/io/jenkins/plugins/sample/PipelineDataPublisher.java
-/Users/matt/jenkins/jenkins-plugins/src/main/java/io/jenkins/plugins/sample/DxDataSender.java
+/Users/matt/jenkins/datacloud-jenkins/src/main/java/io/jenkins/plugins/sample/PipelineDataPublisher.java
+/Users/matt/jenkins/datacloud-jenkins/src/main/java/io/jenkins/plugins/sample/CredentialUtil.java
+/Users/matt/jenkins/datacloud-jenkins/src/main/java/io/jenkins/plugins/sample/DxDataSender.java
