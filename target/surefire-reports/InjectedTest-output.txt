@@ -1,74 +1,74 @@
-Apr 03, 2024 11:40:30 AM org.jvnet.hudson.test.WarExploder explode
-INFO: Picking up existing exploded jenkins.war at /Users/matt/jenkins/jenkins-plugins/target/jenkins-for-test
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+Apr 15, 2024 11:06:58 AM org.jvnet.hudson.test.WarExploder explode
+INFO: Picking up existing exploded jenkins.war at /Users/matt/jenkins/datacloud-jenkins/target/jenkins-for-test
+Apr 15, 2024 11:06:58 AM org.eclipse.jetty.server.handler.ContextHandler setContextPath
 WARNING: Empty contextPath
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.server.Server doStart
+Apr 15, 2024 11:06:59 AM org.eclipse.jetty.server.Server doStart
 INFO: jetty-10.0.20; built: 2024-01-29T20:46:45.278Z; git: 3a745c71c23682146f262b99f4ddc4c1bc41630c; jvm 17.0.9+9
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+Apr 15, 2024 11:06:59 AM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
 INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+Apr 15, 2024 11:06:59 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
 INFO: Session workerName=node0
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.server.handler.ContextHandler doStart
-INFO: Started o.e.j.w.WebAppContext@41fed14f{Jenkins v2.414.3,/,file:///Users/matt/jenkins/jenkins-plugins/target/jenkins-for-test/,AVAILABLE}{/Users/matt/jenkins/jenkins-plugins/target/jenkins-for-test}
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.server.AbstractConnector doStart
-INFO: Started ServerConnector@325bb9a6{HTTP/1.1, (http/1.1)}{localhost:53622}
-Apr 03, 2024 11:40:30 AM org.eclipse.jetty.server.Server doStart
-INFO: Started Server@52a70627{STARTING}[10.0.20,sto=0] @1772ms
-Apr 03, 2024 11:40:31 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:06:59 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.w.WebAppContext@a33b4e3{Jenkins v2.414.3,/,file:///Users/matt/jenkins/datacloud-jenkins/target/jenkins-for-test/,AVAILABLE}{/Users/matt/jenkins/datacloud-jenkins/target/jenkins-for-test}
+Apr 15, 2024 11:06:59 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@72fe8a4f{HTTP/1.1, (http/1.1)}{localhost:61481}
+Apr 15, 2024 11:06:59 AM org.eclipse.jetty.server.Server doStart
+INFO: Started Server@19569ebd{STARTING}[10.0.20,sto=0] @1923ms
+Apr 15, 2024 11:06:59 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started initialization
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/mina-sshd-api-common.jpi
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/mina-sshd-api-core.jpi
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/sshd.jpi
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/javax-activation-api.jpi
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/javax-mail-api.jpi
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/jaxb.jpi
-Apr 03, 2024 11:40:31 AM hudson.PluginManager considerDetachedPlugin
-INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins11813967716597202983/plugins/trilead-api.jpi
-Apr 03, 2024 11:40:32 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/mina-sshd-api-core.jpi
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/mina-sshd-api-common.jpi
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/sshd.jpi
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/javax-activation-api.jpi
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/javax-mail-api.jpi
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/jaxb.jpi
+Apr 15, 2024 11:07:00 AM hudson.PluginManager considerDetachedPlugin
+INFO: Loading a detached plugin as a dependency: /var/folders/5l/kzl7jbgs40d2gq1rk53dzfxr0000gn/T/jenkins1318894421973903081/plugins/trilead-api.jpi
+Apr 15, 2024 11:07:01 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Listed all plugins
-Apr 03, 2024 11:40:32 AM jenkins.bouncycastle.api.BouncyCastlePlugin start
-INFO: /Users/matt/jenkins/jenkins-plugins/target/tmp/j h235382240541674445/plugins/bouncycastle-api/WEB-INF/optional-lib not found; for non RealJenkinsRule this is fine and can be ignored.
-Apr 03, 2024 11:40:33 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:01 AM jenkins.bouncycastle.api.BouncyCastlePlugin start
+INFO: /Users/matt/jenkins/datacloud-jenkins/target/tmp/j h8657038619505563702/plugins/bouncycastle-api/WEB-INF/optional-lib not found; for non RealJenkinsRule this is fine and can be ignored.
+Apr 15, 2024 11:07:02 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Prepared all plugins
-Apr 03, 2024 11:40:33 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:02 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started all plugins
-Apr 03, 2024 11:40:33 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:02 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Augmented all extensions
-Apr 03, 2024 11:40:34 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:04 AM jenkins.InitReactorRunner$1 onAttained
 INFO: System config loaded
-Apr 03, 2024 11:40:34 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:04 AM jenkins.InitReactorRunner$1 onAttained
 INFO: System config adapted
-Apr 03, 2024 11:40:34 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:04 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Loaded all jobs
-Apr 03, 2024 11:40:34 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:04 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Configuration for all jobs updated
-Apr 03, 2024 11:40:34 AM jenkins.InitReactorRunner$1 onAttained
+Apr 15, 2024 11:07:04 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Completed initialization
-Apr 03, 2024 11:40:35 AM org.eclipse.jetty.server.Server doStart
+Apr 15, 2024 11:07:04 AM org.eclipse.jetty.server.Server doStart
 INFO: jetty-10.0.20; built: 2024-01-29T20:46:45.278Z; git: 3a745c71c23682146f262b99f4ddc4c1bc41630c; jvm 17.0.9+9
-Apr 03, 2024 11:40:35 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+Apr 15, 2024 11:07:04 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
 INFO: Session workerName=node0
-Apr 03, 2024 11:40:35 AM org.eclipse.jetty.server.handler.ContextHandler doStart
-INFO: Started o.e.j.s.ServletContextHandler@1d1cbd0f{/,null,AVAILABLE}
-Apr 03, 2024 11:40:35 AM org.eclipse.jetty.server.AbstractConnector doStart
-INFO: Started ServerConnector@3af7d855{HTTP/1.1, (http/1.1)}{0.0.0.0:53625}
-Apr 03, 2024 11:40:35 AM org.eclipse.jetty.server.Server doStart
-INFO: Started Server@f88bfbe{STARTING}[10.0.20,sto=0] @6038ms
-Apr 03, 2024 11:40:36 AM org.eclipse.jetty.server.Server doStop
-INFO: Stopped Server@52a70627{STOPPING}[10.0.20,sto=0]
-Apr 03, 2024 11:40:36 AM org.eclipse.jetty.server.AbstractConnector doStop
-INFO: Stopped ServerConnector@325bb9a6{HTTP/1.1, (http/1.1)}{localhost:0}
-Apr 03, 2024 11:40:36 AM org.eclipse.jetty.server.handler.ContextHandler doStop
-INFO: Stopped o.e.j.w.WebAppContext@41fed14f{Jenkins v2.414.3,/,file:///Users/matt/jenkins/jenkins-plugins/target/jenkins-for-test/,STOPPED}{/Users/matt/jenkins/jenkins-plugins/target/jenkins-for-test}
-Apr 03, 2024 11:40:36 AM hudson.lifecycle.Lifecycle onStatusUpdate
+Apr 15, 2024 11:07:04 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.s.ServletContextHandler@3af7d855{/,null,AVAILABLE}
+Apr 15, 2024 11:07:04 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@f88bfbe{HTTP/1.1, (http/1.1)}{0.0.0.0:61483}
+Apr 15, 2024 11:07:04 AM org.eclipse.jetty.server.Server doStart
+INFO: Started Server@5d8ab698{STARTING}[10.0.20,sto=0] @7276ms
+Apr 15, 2024 11:07:06 AM org.eclipse.jetty.server.Server doStop
+INFO: Stopped Server@19569ebd{STOPPING}[10.0.20,sto=0]
+Apr 15, 2024 11:07:06 AM org.eclipse.jetty.server.AbstractConnector doStop
+INFO: Stopped ServerConnector@72fe8a4f{HTTP/1.1, (http/1.1)}{localhost:0}
+Apr 15, 2024 11:07:06 AM org.eclipse.jetty.server.handler.ContextHandler doStop
+INFO: Stopped o.e.j.w.WebAppContext@a33b4e3{Jenkins v2.414.3,/,file:///Users/matt/jenkins/datacloud-jenkins/target/jenkins-for-test/,STOPPED}{/Users/matt/jenkins/datacloud-jenkins/target/jenkins-for-test}
+Apr 15, 2024 11:07:06 AM hudson.lifecycle.Lifecycle onStatusUpdate
 INFO: Stopping Jenkins
-Apr 03, 2024 11:40:41 AM hudson.lifecycle.Lifecycle onStatusUpdate
+Apr 15, 2024 11:07:11 AM hudson.lifecycle.Lifecycle onStatusUpdate
 INFO: Jenkins stopped
-Apr 03, 2024 11:40:41 AM org.jvnet.hudson.test.TemporaryDirectoryAllocator dispose
-INFO: deleting /Users/matt/jenkins/jenkins-plugins/target/tmp/j h235382240541674445
+Apr 15, 2024 11:07:12 AM org.jvnet.hudson.test.TemporaryDirectoryAllocator dispose
+INFO: deleting /Users/matt/jenkins/datacloud-jenkins/target/tmp/j h8657038619505563702
